@@ -1,0 +1,12 @@
+html
+  head
+    link(rel='stylesheet', href='https://hunter2labs.s3.amazonaws.com/common.css')
+    script(src='https://hunter2labs.s3.amazonaws.com/common.js')
+  body
+    h2= 'Welcome, ' + user.email
+    h3
+      a(href='/members') View members
+      br
+      a(href='/delete' onclick="return confirm('Are you sure you want to delete your account?')") Delete my account
+      br
+      a(href='/logout') Log out

@@ -1,0 +1,16 @@
+html
+  head
+    link(rel='stylesheet', href='https://hunter2labs.s3.amazonaws.com/common.css')
+    script(src='https://hunter2labs.s3.amazonaws.com/common.js')
+  body
+    h2 Log in:
+    form(action='/?redirect='+redirect, method='post')
+      input#email(name='logemail', placeholder="Your email", required)
+      input#password(type='password', name='logpassword', placeholder="Password", required)
+      button(type='submit') Log in
+    h2 or Register:
+    form(action='/', method='post')
+      input#email(name='email', placeholder="Your email", required)
+      input#password(type='password', name='password', placeholder="Password", required)
+      input#passwordConf(type='password', name='passwordConf', placeholder="Confirm password", required)
+      button(type='submit') Register

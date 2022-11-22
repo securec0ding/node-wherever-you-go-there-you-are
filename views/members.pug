@@ -1,0 +1,11 @@
+html
+  head
+    link(rel='stylesheet', href='https://hunter2labs.s3.amazonaws.com/common.css')
+    script(src='https://hunter2labs.s3.amazonaws.com/common.js')
+  body
+    h2 List of members:
+    ul
+      for member in members
+        li= member.email
+    h3
+      a(href='/profile') Back to profile
